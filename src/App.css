@@ -1,38 +1,47 @@
-.App {
+/* RoverCar */
+.rover-card{
+  cursor: pointer;
+  margin: 20px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.rover-card:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.rover-selected{
+  border: 5px solid #00BFA5 !important;
+}
+
+
+/* ListPhotos */
+.grid-container{
+  column-count: 3;
+}
+
+.img_wrap_grid {
+  position: relative;
+  border-radius: 5px;
   text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-post{
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width:550px){
+  .grid-container{
+    column-count: 2
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width:319px){
+  .grid-container{
+    column-count: 1
   }
 }
