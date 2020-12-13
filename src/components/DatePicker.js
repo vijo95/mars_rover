@@ -33,7 +33,7 @@ export default class DatePicker extends Component {
   render() {
 
     return (
-      <DayPickerInput 
+      <DayPickerInput
         pagedNavigation
         reverseMonths
         numberOfMonths={12}

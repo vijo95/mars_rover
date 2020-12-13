@@ -3,24 +3,27 @@ import { Icon, Label } from 'semantic-ui-react'
 
 export default function Pagination({page, setPage, rover, fetchPhotos}) {
 
-  function handlePageIncrease() {
-    setPage(page+1)
-    fetchPhotos(rover, page+1)
-  }
-
-  function handlePageDecrease(){
-    if(1 < page){
-      setPage(page-1)
-      fetchPhotos(rover, page-1)
+  function handlePageChange(n) {
+    if(1 <= page+n){
+      setPage(page+n)
+      fetchPhotos(rover, page+n)
     }
   }
+
+
 
   return (
     <div style={{textAlign:'center', margin:'20px'}}>
       <Icon 
+        link name="angle double left" 
+        size="big"
+        onClick={() => handlePageChange(-10)}
+      />
+
+      <Icon 
         link name="angle left" 
-        size="huge"
-        onClick={() => handlePageDecrease()}
+        size="big"
+        onClick={() => handlePageChange(-1)}
       />
 
       <Label circular size="huge">
@@ -29,8 +32,14 @@ export default function Pagination({page, setPage, rover, fetchPhotos}) {
 
       <Icon 
         link name="angle right"  
-        size="huge"
-        onClick={() => handlePageIncrease()}
+        size="big"
+        onClick={() => handlePageChange(1)}
+      />
+
+      <Icon 
+        link name="angle double right"  
+        size="big"
+        onClick={() => handlePageChange(10)}
       />
     </div>
   )

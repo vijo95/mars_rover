@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { Loader } from 'semantic-ui-react'
 
@@ -19,6 +19,10 @@ function App() {
   const [rover, setRover] = useState('curiosity')
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    fetchPhotos("curiosity", 1)
+  }, [])
+
   function fetchPhotos(roverName, pageNumber) {
     setLoading(true)
     axios
@@ -31,11 +35,11 @@ function App() {
       console.log(err);
     })
   }
-
+  
 
   return (
     <>
-      <h1 style={{margin:'20px', textAlign:'center', color:'whitesmoke'}}>
+      <h1 style={{margin:'20px', textAlign:'center', color:'#263238'}}>
         Mars Rover Photos
       </h1>
       

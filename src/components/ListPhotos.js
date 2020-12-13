@@ -13,12 +13,13 @@ export default function ListPhotos({photos, page, setPage, rover,fetchPhotos}) {
       />
       <div style={{margin:'auto',padding:'5px', maxWidth:'800px'}}>
         <div className="grid-container">
-          { photos.length === 0 ?
+          { photos ? 
+            photos.length === 0 ?
             <h1>Nothing to see here..</h1> :
             photos.map((photo,index) =>
             <SinglePhoto key={index}
               img={photo.img_src}
-            />)
+            />) : null
           }
         </div>
       </div>

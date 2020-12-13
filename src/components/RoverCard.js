@@ -14,7 +14,7 @@ export default function RoverCard({img,name,fetchPhotos,setRover, rover, page}) 
       <Image src={img} wrapped ui={true} />
       <Card.Content>
         <Card.Header textAlign="center">
-          {name}
+          {name ? name.charAt(0).toUpperCase() + name.slice(1) : ''}
         </Card.Header>
       </Card.Content>
     </Card>

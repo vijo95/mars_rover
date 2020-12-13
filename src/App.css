@@ -6,7 +6,7 @@
 }
 
 .rover-card:hover{
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
   opacity: 0.8;
 }
 
@@ -45,4 +45,11 @@
   .grid-container{
     column-count: 1
   }
+}
+
+
+.DayPickerInput input{
+  padding: 10px !important;
+  border-radius: 5px !important;
+  border: 1px solid #E0E0E0;
 }

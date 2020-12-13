@@ -7,7 +7,7 @@ export default function Rovers({fetchPhotos,setRover,rover, page}) {
     <Card.Group centered>
       <RoverCard
         img={"https://mars.nasa.gov/system/feature_items/images/6037_msl_banner.jpg"}
-        name={"Curiosity"}
+        name={"curiosity"}
         fetchPhotos={fetchPhotos}
         setRover={setRover}
         rover={rover}
@@ -15,7 +15,7 @@ export default function Rovers({fetchPhotos,setRover,rover, page}) {
       />
       <RoverCard 
         img={"https://s1.eestatic.com/2019/02/13/actualidad/Actualidad_375974696_114650383_1024x576.jpg"}
-        name={"Opportunity"}
+        name={"opportunity"}
         fetchPhotos={fetchPhotos}
         setRover={setRover}
         rover={rover}
@@ -23,7 +23,7 @@ export default function Rovers({fetchPhotos,setRover,rover, page}) {
       />
       <RoverCard 
         img={"https://jplopez.net/wp-content/uploads/2019/09/rover-spirit.jpg"}
-        name={"Spirit"}
+        name={"spirit"}
         fetchPhotos={fetchPhotos}
         setRover={setRover}
         rover={rover}

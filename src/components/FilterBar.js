@@ -22,11 +22,11 @@ export default function FilterBar({setDateType, setSolDate, setEarthDate, setCam
     }
 
     return (
-      <Menu size='large' style={{maxWidth:'800px', margin:'20px auto'}} stackable>
+      <Menu secondary size='large' style={{maxWidth:'800px', margin:'40px auto'}} stackable>
 
         <Menu.Item>
-          <Input 
-            value={solDate}
+          <Input
+            value={isNaN(solDate) ? '' : solDate}
             onChange={(event) => handleSolChange(event)}
             placeholder='Sol date' 
           />
@@ -41,8 +41,9 @@ export default function FilterBar({setDateType, setSolDate, setEarthDate, setCam
           />
         </Menu.Item>
 
-        <Menu.Menu>
-          <Dropdown item text={camera ? camera.split("=")[1].toUpperCase() : "Camera"}>
+        <Menu.Menu >
+          <Dropdown pointing="top left" upward={false} item 
+            text={camera ? camera.split("=")[1].toUpperCase() : "Camera"}>
             <Dropdown.Menu>
               <Dropdown.Item onClick={() => handleCameraChange('')}>Default</Dropdown.Item>
               <Dropdown.Item onClick={() => handleCameraChange('fhaz')}>Front Hazard Avoidance Camera</Dropdown.Item>
