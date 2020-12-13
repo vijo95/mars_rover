@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import { Loader } from 'semantic-ui-react'
 
 import Rovers from './components/Rovers'
 import FilterBar from './components/FilterBar'
@@ -16,12 +17,15 @@ function App() {
   const [dateType, setDateType] = useState("sol")
   const [camera, setCamera] = useState('')
   const [rover, setRover] = useState('curiosity')
+  const [loading, setLoading] = useState(false)
 
-  function fetchPhotos(name) {
+  function fetchPhotos(roverName, pageNumber) {
+    setLoading(true)
     axios
-    .get(baseAPI + name + `/photos?${dateType}=${solDate}${earthDate}${camera}&page=${page}&` + API_KEY)
+    .get(baseAPI + roverName + `/photos?${dateType}=${solDate}${earthDate}${camera}&page=${pageNumber}&` + API_KEY)
     .then(res => {
       setPhotos(res.data.photos)
+      setLoading(false)
     })
     .catch(err => {
       console.log(err);
@@ -31,7 +35,7 @@ function App() {
 
   return (
     <>
-      <h1 style={{margin:'20px', textAlign:'center'}}>
+      <h1 style={{margin:'20px', textAlign:'center', color:'whitesmoke'}}>
         Mars Rover Photos
       </h1>
       
@@ -39,6 +43,7 @@ function App() {
         fetchPhotos={fetchPhotos}
         setRover={setRover}
         rover={rover}
+        page={page}
       />
 
       <FilterBar 
@@ -53,12 +58,20 @@ function App() {
 
         fetchPhotos={fetchPhotos}
         rover={rover}
+        page={page}
       />
 
-      { photos ?
+      { !loading && photos ?
         <ListPhotos 
           photos={photos}
-        /> : null
+          setPage={setPage}
+
+          fetchPhotos={fetchPhotos}
+          rover={rover}
+          page={page}
+        /> : 
+        loading ? <Loader active inline='centered' /> :
+        null
       }
     </>
   );

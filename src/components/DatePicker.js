@@ -34,8 +34,12 @@ export default class DatePicker extends Component {
 
     return (
       <DayPickerInput 
+        pagedNavigation
+        reverseMonths
+        numberOfMonths={12}
+        fixedWeeks
         value={this.props.earthDate}
-        placeholder="Earth date"
+        placeholder="YYYY-MM-DD"
         onDayChange={this.handleDayChange} />
     )
   }

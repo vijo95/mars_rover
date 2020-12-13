@@ -2,8 +2,8 @@ import React from 'react'
 import { Button, Dropdown, Menu, Input } from 'semantic-ui-react'
 import DatePicker from './DatePicker'
 
-export default function FilterBar({setDateType,setSolDate,setEarthDate,setCamera,
-  solDate,earthDate,camera,fetchPhotos,rover}) {
+export default function FilterBar({setDateType, setSolDate, setEarthDate, setCamera,
+  solDate, earthDate, camera, fetchPhotos, rover, page}) {
 
     function handleSolChange(event) {
       event.preventDefault()
@@ -22,7 +22,7 @@ export default function FilterBar({setDateType,setSolDate,setEarthDate,setCamera
     }
 
     return (
-      <Menu size='large' style={{maxWidth:'800px', margin:'20px auto'}}>
+      <Menu size='large' style={{maxWidth:'800px', margin:'20px auto'}} stackable>
 
         <Menu.Item>
           <Input 
@@ -60,9 +60,8 @@ export default function FilterBar({setDateType,setSolDate,setEarthDate,setCamera
 
         <Menu.Item position="right">
           <Button primary
-            onClick={() => fetchPhotos(rover)}
-          >
-            Filtrar
+            onClick={() => fetchPhotos(rover,page)}
+          > Filtrar
           </Button>
         </Menu.Item>
 

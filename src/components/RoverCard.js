@@ -1,11 +1,11 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
 
-export default function RoverCard({img,name,fetchPhotos,setRover, rover}) {
+export default function RoverCard({img,name,fetchPhotos,setRover, rover, page}) {
 
   function handleRoverChange(){
     setRover(name)
-    fetchPhotos(name)
+    fetchPhotos(name, page)
   }
 
   return (

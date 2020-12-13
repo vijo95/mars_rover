@@ -27,6 +27,7 @@
   margin: auto;
   margin-bottom: 20px;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .img-post{
