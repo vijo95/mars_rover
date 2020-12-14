@@ -1,0 +1,619 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot App 1`] = `
+Array [
+  <h1
+    style={
+      Object {
+        "color": "#263238",
+        "margin": "20px",
+        "textAlign": "center",
+      }
+    }
+  >
+    Mars Rover Photos
+  </h1>,
+  <div
+    className="ui centered cards"
+  >
+    <a
+      className="ui card rover-card rover-selected"
+      onClick={[Function]}
+    >
+      <div
+        className="ui image"
+      >
+        <img
+          src="https://mars.nasa.gov/system/feature_items/images/6037_msl_banner.jpg"
+        />
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="center aligned header"
+        >
+          Curiosity
+        </div>
+      </div>
+    </a>
+    <a
+      className="ui card rover-card"
+      onClick={[Function]}
+    >
+      <div
+        className="ui image"
+      >
+        <img
+          src="https://s1.eestatic.com/2019/02/13/actualidad/Actualidad_375974696_114650383_1024x576.jpg"
+        />
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="center aligned header"
+        >
+          Opportunity
+        </div>
+      </div>
+    </a>
+    <a
+      className="ui card rover-card"
+      onClick={[Function]}
+    >
+      <div
+        className="ui image"
+      >
+        <img
+          src="https://jplopez.net/wp-content/uploads/2019/09/rover-spirit.jpg"
+        />
+      </div>
+      <div
+        className="content"
+      >
+        <div
+          className="center aligned header"
+        >
+          Spirit
+        </div>
+      </div>
+    </a>
+  </div>,
+  <div
+    className="ui large secondary stackable menu"
+    style={
+      Object {
+        "margin": "40px auto",
+        "maxWidth": "800px",
+      }
+    }
+  >
+    <div
+      className="item"
+      onClick={[Function]}
+    >
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Sol date"
+          type="text"
+          value={2000}
+        />
+      </div>
+    </div>
+    <div
+      className="item"
+      onClick={[Function]}
+    >
+      <div
+        className="DayPickerInput"
+      >
+        <input
+          onBlur={[Function]}
+          onChange={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          placeholder="YYYY-MM-DD"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="menu"
+    >
+      <div
+        aria-expanded={false}
+        className="ui item top left pointing dropdown"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="listbox"
+        tabIndex={0}
+      >
+        <div
+          aria-atomic={true}
+          aria-live="polite"
+          className="divider text"
+          role="alert"
+        >
+          Camera
+        </div>
+        <i
+          aria-hidden="true"
+          className="dropdown icon"
+          onClick={[Function]}
+        />
+        <div
+          className="menu transition"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Default
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Front Hazard Avoidance Camera
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Rear Hazard Avoidance Camera
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Mast Camera
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Chemistry and Camera Complex
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Mars Hand Lens Imager
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Mars Descent Imager
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Navigation Camera
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Panoramic Camera
+          </div>
+          <div
+            className="item"
+            onClick={[Function]}
+            role="option"
+          >
+            Miniature Thermal Emission Spectrometer (Mini-TES)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="right item"
+      onClick={[Function]}
+    >
+      <button
+        className="ui primary button"
+        onClick={[Function]}
+      >
+         Filtrar
+      </button>
+    </div>
+  </div>,
+]
+`;
+
+exports[`matches snapshot DatePicker 1`] = `
+<div
+  className="DayPickerInput"
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="YYYY-MM-DD"
+    value=""
+  />
+</div>
+`;
+
+exports[`matches snapshot FilterBar 1`] = `
+<div
+  className="ui large secondary stackable menu"
+  style={
+    Object {
+      "margin": "40px auto",
+      "maxWidth": "800px",
+    }
+  }
+>
+  <div
+    className="item"
+    onClick={[Function]}
+  >
+    <div
+      className="ui input"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Sol date"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="item"
+    onClick={[Function]}
+  >
+    <div
+      className="DayPickerInput"
+    >
+      <input
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder="YYYY-MM-DD"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="menu"
+  >
+    <div
+      aria-expanded={false}
+      className="ui item top left pointing dropdown"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="listbox"
+      tabIndex={0}
+    >
+      <div
+        aria-atomic={true}
+        aria-live="polite"
+        className="divider text"
+        role="alert"
+      >
+        Camera
+      </div>
+      <i
+        aria-hidden="true"
+        className="dropdown icon"
+        onClick={[Function]}
+      />
+      <div
+        className="menu transition"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Default
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Front Hazard Avoidance Camera
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Rear Hazard Avoidance Camera
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Mast Camera
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Chemistry and Camera Complex
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Mars Hand Lens Imager
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Mars Descent Imager
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Navigation Camera
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Panoramic Camera
+        </div>
+        <div
+          className="item"
+          onClick={[Function]}
+          role="option"
+        >
+          Miniature Thermal Emission Spectrometer (Mini-TES)
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="right item"
+    onClick={[Function]}
+  >
+    <button
+      className="ui primary button"
+      onClick={[Function]}
+    >
+       Filtrar
+    </button>
+  </div>
+</div>
+`;
+
+exports[`matches snapshot ListPhotos 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "margin": "20px",
+        "textAlign": "center",
+      }
+    }
+  >
+    <i
+      aria-hidden="true"
+      className="angle double left big link icon"
+      onClick={[Function]}
+    />
+    <i
+      aria-hidden="true"
+      className="angle left big link icon"
+      onClick={[Function]}
+    />
+    <div
+      className="ui huge circular label"
+      onClick={[Function]}
+    />
+    <i
+      aria-hidden="true"
+      className="angle right big link icon"
+      onClick={[Function]}
+    />
+    <i
+      aria-hidden="true"
+      className="angle double right big link icon"
+      onClick={[Function]}
+    />
+  </div>,
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxWidth": "800px",
+        "padding": "5px",
+      }
+    }
+  >
+    <div
+      className="grid-container"
+    />
+  </div>,
+]
+`;
+
+exports[`matches snapshot Pagination 1`] = `
+<div
+  style={
+    Object {
+      "margin": "20px",
+      "textAlign": "center",
+    }
+  }
+>
+  <i
+    aria-hidden="true"
+    className="angle double left big link icon"
+    onClick={[Function]}
+  />
+  <i
+    aria-hidden="true"
+    className="angle left big link icon"
+    onClick={[Function]}
+  />
+  <div
+    className="ui huge circular label"
+    onClick={[Function]}
+  />
+  <i
+    aria-hidden="true"
+    className="angle right big link icon"
+    onClick={[Function]}
+  />
+  <i
+    aria-hidden="true"
+    className="angle double right big link icon"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`matches snapshot RoverCard 1`] = `
+<a
+  className="ui card rover-card rover-selected"
+  onClick={[Function]}
+>
+  <div
+    className="ui image"
+  >
+    <img />
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="center aligned header"
+    >
+      
+    </div>
+  </div>
+</a>
+`;
+
+exports[`matches snapshot Rovers 1`] = `
+<div
+  className="ui centered cards"
+>
+  <a
+    className="ui card rover-card"
+    onClick={[Function]}
+  >
+    <div
+      className="ui image"
+    >
+      <img
+        src="https://mars.nasa.gov/system/feature_items/images/6037_msl_banner.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="center aligned header"
+      >
+        Curiosity
+      </div>
+    </div>
+  </a>
+  <a
+    className="ui card rover-card"
+    onClick={[Function]}
+  >
+    <div
+      className="ui image"
+    >
+      <img
+        src="https://s1.eestatic.com/2019/02/13/actualidad/Actualidad_375974696_114650383_1024x576.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="center aligned header"
+      >
+        Opportunity
+      </div>
+    </div>
+  </a>
+  <a
+    className="ui card rover-card"
+    onClick={[Function]}
+  >
+    <div
+      className="ui image"
+    >
+      <img
+        src="https://jplopez.net/wp-content/uploads/2019/09/rover-spirit.jpg"
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="center aligned header"
+      >
+        Spirit
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`matches snapshot SinglePhoto 1`] = `
+<div
+  className="img_wrap_grid"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <img
+    alt=""
+    className="img-post"
+    height="100%"
+    width="100%"
+  />
+</div>
+`;
